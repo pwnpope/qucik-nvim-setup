@@ -10,5 +10,6 @@ nvim
 
 - auto completion for python, c, rust
 ```
-:CocInstall coc-python coc-clangd coc-rls coc-nasm coc-phpls
+:PlugInstall
+:CocInstall coc-python coc-clangd coc-rls coc-phpls
 ```
