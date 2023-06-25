@@ -1,6 +1,6 @@
 sudo apt update
 sudo apt install git vim curl exuberant-ctags npm nodejs python3-pip
-pip3 install jedi
+pip3 install jedi pylint
 
 # install nvim
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
