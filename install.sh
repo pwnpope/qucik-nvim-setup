@@ -28,3 +28,6 @@ echo "\n[+]finished installing!"
 # write config contents to init.vim for nvim config
 mkdir ~/.config;mkdir ~/.config/nvim
 cat config > ~/.config/nvim/init.vim
+
+# rustup install (remove this line if your not interested in rust auto completion)
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
