@@ -34,11 +34,10 @@ nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR>
-nnoremap <C-s> :wq!<CR>
+nnoremap <C-S> :wq!<CR>
 nnoremap <C-K> :delete<CR>
-nnoremap <C-z> :u<CR>
-
-
+nnoremap <C-Z> :u<CR>
+nnoremap <C-c> :terminal %:p<CR>
 nmap <F8> :TagbarToggle<CR>
 
 :set completeopt-=preview " For No Previews
