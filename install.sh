@@ -18,6 +18,7 @@ cd $(sudo find /* | grep 'plugged/coc.nvim' -m 1)
 sudo npm install -g yarn
 yarn install
 yarn build
+npm ci
 
 # create config dir if it doesn't already exist
 # create nvim dir if it doesn't already exist
@@ -25,7 +26,6 @@ yarn build
 mkdir ~/.config;mkdir ~/.config/nvim
 cat config > ~/.config/nvim/init.vim
 
-cd ~/.local/share/nvim/plugged/coc.nvim;npm ci
 # navigate back to OG directory
 cd $cwd
 echo "\n[+]finished installing!"
