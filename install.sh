@@ -14,7 +14,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 # yarn install and build 
 cwd=$(pwd)
-cd $(sudo find /* | grep 'plugged/coc.nvim' -m 1)
+cd $HOME/.local/share/nvim/plugged/coc.nvim
 sudo npm install -g yarn
 yarn install
 yarn build
