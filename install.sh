@@ -12,13 +12,9 @@ chmod u+x nvim.appimage
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
-# yarn install and build 
 cwd=$(pwd)
-cd $HOME/.local/share/nvim/plugged/coc.nvim
-sudo npm install -g yarn
-yarn install
-yarn build
-npm ci
+cd ~/.local/share/nvim/plugged/coc.nvim
+npm install
 
 # create config dir if it doesn't already exist
 # create nvim dir if it doesn't already exist
